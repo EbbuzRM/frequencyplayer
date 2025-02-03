@@ -21,10 +21,11 @@ L'applicazione è pensata per essere utilizzata su dispositivi desktop e smartph
 - **Web Audio API**
 
 ## Installazione e Utilizzo 
+Link per l'utilizzo: https://ebbuzrm.github.io/frequencyplayer
 
-1. **Clona il Repository:**
-   ---bash
-   git clone https://github.com/EbbuzRM/frequencyplayer.git
+Quando il player è in esecuzione e si cambia la frequenza dallo slider o dal campo Frequenza, **il player non si ferma** , quindi nel caso sei un Car Audio Lover attento a questo particolare.
+Invece gli sweep si fermano in automatico raggiunta la frequenza finale.
+   
 
 Licenza
 Questo progetto è distribuito con licenza MIT. Vedi il file LICENSE per maggiori dettagli.
@@ -57,9 +58,10 @@ The application is designed for use on desktop and mobile devices and includes a
 
 ## Installation and Usage
 
-1. **Clone the Repository:**
----bash
-git clone https://github.com/EbbuzRM/frequencyplayer.git
+Link for use: https://ebbuzrm.github.io/frequencyplayer
+
+When the player is running and you change the frequency from the slider or the frequency field, **the player does not stop** , so if you are a Car Audio Lover pay attention to this detail.
+Instead the sweeps stop automatically when the final frequency is reached.
 
 License
 This project is distributed under the MIT license. See the LICENSE file for more details.
