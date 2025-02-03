@@ -24,7 +24,7 @@ Invece gli sweep si fermano in automatico raggiunta la frequenza finale.
 Licenza
 Questo progetto è distribuito con licenza MIT. Vedi il file LICENSE per maggiori dettagli.
 
-#Contatti
+# Contatti
 Per domande o suggerimenti, puoi contattarmi via email o aprire una issue sul repository.
 
 
@@ -56,6 +56,6 @@ Instead the sweeps stop automatically when the final frequency is reached.
 License
 This project is distributed under the MIT license. See the LICENSE file for more details.
 
-#Contacts
+# Contacts
 For questions or suggestions, you can contact me via email or open an issue on the repository.
 
