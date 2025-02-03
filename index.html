@@ -32,6 +32,11 @@
       <button id="stopButton" data-translate-key="stopButton" disabled>Stop</button>
     </div>
 
+    <!-- Controllo Volume  -->
+    <div class="control-box">
+      <label for="volume" id="volumeLabel" data-translate-key="volumeLabel">Volume:</label>
+      <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5">
+    </div>
     <!-- Controlli della Frequenza -->
     <div class="control-box">
       <label for="frequencyInput" id="frequencyInputLabel" data-translate-key="frequencyInputLabel">Frequency (Hz):</label>
@@ -45,11 +50,7 @@
       <p id="freqDisplay">440 Hz</p>
       <input type="range" id="frequencySlider" min="20" max="20000" value="440" step="1">
     </div>
-    <!-- Controllo Volume  -->
-    <div class="control-box">
-      <label for="volume" id="volumeLabel" data-translate-key="volumeLabel">Volume:</label>
-      <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5">
-    </div>
+   
     <!-- Checkbox per bloccare lo slider -->
     <div class="control-box">
       <input type="checkbox" id="lockSlider" checked>
