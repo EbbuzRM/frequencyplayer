@@ -25,7 +25,7 @@ Licenza
 Questo progetto è distribuito con licenza MIT. Vedi il file LICENSE per maggiori dettagli.
 
 # Contatti
-Per domande o suggerimenti, puoi contattarmi via email o aprire una issue sul repository.
+Per domande o suggerimenti, puoi contattarmi via facebook (https://www.facebook.com/ebbuzbass) o aprire una issue sul repository.
 
 
 # Frequency Player
@@ -57,5 +57,5 @@ License
 This project is distributed under the MIT license. See the LICENSE file for more details.
 
 # Contacts
-For questions or suggestions, you can contact me via email or open an issue on the repository.
+For questions or suggestions, you can contact me on facebook (https://www.facebook.com/ebbuzbass) or open an issue on the repository.
 
