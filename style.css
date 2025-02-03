@@ -1,0 +1,150 @@
+  :root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --primary-color: #2ecc71;
+  }
+
+  .dark-theme {
+    --background-color: #000000;
+    --text-color: #ffffff;
+    --primary-color: #27ae60;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* Header Controls */
+  .header-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .language-select select {
+    padding: 5px;
+    font-size: 1rem;
+  }
+
+  .theme-toggle {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Titoli */
+  h1, h2 {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  #subtitle.centered {
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--text-color);
+  }
+
+  /* Logo */
+  #logo {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 350px;
+    height: auto;
+  }
+
+  /* Control Boxes */
+  .control-box {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  input[type="number"],
+  input[type="range"],
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+
+  button {
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: opacity 0.3s;
+  }
+
+  button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  /* Custom number input spinner */
+  .number-input-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .number-input-container input[type="number"] {
+    width: 100%;
+    padding-right: 50px; /* Spazio per i bottoni spinner */
+    box-sizing: border-box;
+  }
+
+  .number-input-container .spinner {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .number-input-container .spinner button {
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    width: 30px;
+    height: 25px;
+    padding: 0;
+    margin: 1px 0;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+  /* Su dispositivi mobili, ingrandiamo i bottoni spinner */
+  @media (max-width: 600px) {
+    .number-input-container .spinner button {
+      width: 35px;
+      height: 25px;
+      font-size: 1.2rem;
+    }
+  }
