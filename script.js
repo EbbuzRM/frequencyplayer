@@ -5,6 +5,24 @@ document.addEventListener("DOMContentLoaded", function () {
     let gainNode = audioContext.createGain();
     let isSweeping = false;
     let sweepTimeout = null;
+    // Funzione per aggiornare il contatore di visite
+function updateVisitCounter() {
+  // Scegli un namespace e una chiave univoci per il tuo progetto
+  // In questo esempio: namespace = "my-frequency-player", key = "visits"
+  fetch('https://api.countapi.xyz/hit/my-frequency-player/visits')
+    .then(response => response.json())
+    .then(data => {
+      const visitCounter = document.getElementById("visitCounter");
+      if (visitCounter) {
+        visitCounter.textContent = "Visite: " + data.value;
+      }
+    })
+    .catch(err => console.error("Errore nel contatore visite:", err));
+}
+
+// Chiama la funzione al caricamento della pagina
+updateVisitCounter();
+
 
     // UI Elements
     const frequencySlider = document.getElementById("frequencySlider");
