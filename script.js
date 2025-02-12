@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let gainNode = audioContext.createGain();
     let isSweeping = false;
     let sweepTimeout = null;
-    
+
     // UI Elements
     const frequencySlider = document.getElementById("frequencySlider");
     const frequencyInput = document.getElementById("frequencyInput");
@@ -17,6 +17,20 @@ document.addEventListener("DOMContentLoaded", function () {
     const freqDisplay = document.getElementById("freqDisplay");
     const freqUp = document.getElementById("freqUp");
     const freqDown = document.getElementById("freqDown");
+
+    // Contatore visite
+    const visitCounter = document.getElementById("visitCounter");
+
+    // Funzione per aggiornare il contatore
+    function updateVisitCounter() {
+        let visits = localStorage.getItem('pageVisits') || 0;
+        visits = parseInt(visits) + 1;
+        localStorage.setItem('pageVisits', visits);
+        visitCounter.textContent = `${visits} visite`;
+    }
+
+    // Inizializza il contatore
+    updateVisitCounter();
 
     // Translation Elements
     const languageSelect = document.getElementById("languageSelect");
@@ -206,19 +220,5 @@ document.addEventListener("DOMContentLoaded", function () {
         if (event.target.value !== "none") {
             startSweep(event.target.value);
         }
-        // Contatore visite
-    const visitCounter = document.getElementById("visitCounter");
-    
-    // Funzione per aggiornare il contatore
-    function updateVisitCounter() {
-        let visits = localStorage.getItem('pageVisits') || 0;
-        visits = parseInt(visits) + 1;
-        localStorage.setItem('pageVisits', visits);
-        visitCounter.textContent = `${visits} visite`;
-    }
-
-    // Inizializza il contatore
-    updateVisitCounter();
-    
     });
 });

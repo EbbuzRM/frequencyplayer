@@ -92,19 +92,19 @@ h1, h2 {
 }
 
 .visit-counter {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    padding: 5px 10px;
-    background: rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    font-size: 0.9em;
-    color: #666;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  font-size: 0.9em;
+  color: #666;
 }
 
 .dark-theme .visit-counter {
-    background: rgba(255, 255, 255, 0.1);
-    color: #ccc;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ccc;
 }
 
 /* Control Boxes */
