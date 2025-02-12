@@ -91,16 +91,20 @@ h1, h2 {
   filter: invert(100%);
 }
 
-#visitCounter {
-  text-align: left;
-  font-size: 1.2rem;
-  font-weight: bold;
-  padding: 5px;
-  margin-top: 10px;
-  background-color: var(--input-bg);
-  color: var(--text-color);
-  border: 1px solid var(--text-color);
-  border-radius: 8px;
+.visit-counter {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.dark-theme .visit-counter {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ccc;
 }
 
 /* Control Boxes */
