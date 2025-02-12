@@ -36,20 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
     }
 
-        // Contatore visite
-    const visitCounter = document.getElementById("visitCounter");
-    
-    // Funzione per aggiornare il contatore
-    function updateVisitCounter() {
-        let visits = localStorage.getItem('pageVisits') || 0;
-        visits = parseInt(visits) + 1;
-        localStorage.setItem('pageVisits', visits);
-        visitCounter.textContent = `${visits} visite`;
-    }
-
-    // Inizializza il contatore
-    updateVisitCounter();
-    
     // Translation dictionary
     const translations = {
         en: {
@@ -220,5 +206,19 @@ document.addEventListener("DOMContentLoaded", function () {
         if (event.target.value !== "none") {
             startSweep(event.target.value);
         }
+        // Contatore visite
+    const visitCounter = document.getElementById("visitCounter");
+    
+    // Funzione per aggiornare il contatore
+    function updateVisitCounter() {
+        let visits = localStorage.getItem('pageVisits') || 0;
+        visits = parseInt(visits) + 1;
+        localStorage.setItem('pageVisits', visits);
+        visitCounter.textContent = `${visits} visite`;
+    }
+
+    // Inizializza il contatore
+    updateVisitCounter();
+    
     });
 });
